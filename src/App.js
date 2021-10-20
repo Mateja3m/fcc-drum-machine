@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import Music from './Music';
+import {audioList} from './data'
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-light min-vh-100 text-success justify-content">
+  <div className='text-center'>
+  <h2>Drum Machine</h2>
+  {audioList.map((clip)=> 
+  (<Music key={clip.id} clip={clip} />)
+  )}
+  </div>
     </div>
   );
 }
