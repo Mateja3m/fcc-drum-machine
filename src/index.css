@@ -3,21 +3,39 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 90px);
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  gap: 10px;
+}
 h2 {
+  text-align: center;
   font-size: 2.5rem;
   padding: 30px 0;
   font-weight: 900;
 }
 
 .volume-name {
-  margin: 20px;
+  margin: 20px 0;
   font-weight: bold;
+  align-self: center;
+  grid-column: 2 / 3;
 }
 
 .volume-name:hover {
   font-size: 20px;
 }
 
+.volume-slider {
+  grid-column: 2 / 3;
+  align-self: center;
+}
 #display {
   margin: 20px;
+  grid-column: 1 / 4;
+  align-self: center;
 }
