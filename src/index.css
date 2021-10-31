@@ -34,7 +34,9 @@ h2 {
   grid-column: 2 / 3;
   align-self: center;
 }
+
 #display {
+  min-height: 4rem;
   margin: 20px;
   grid-column: 1 / 4;
   align-self: center;

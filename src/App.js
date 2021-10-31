@@ -14,8 +14,8 @@ function App() {
         ))}
         <br />
         <label className="volume-name">Volume</label> <br/>
-        <input className="w-40 volume-slider" type='range' step='0.01' name='volume' min='0' max='1' value={volume} onChange={(e)=> setVolume(e.target.value)} /> 
-        <h4 id='display'>{record}</h4>
+        <input className="w-40 volume-slider" type='range' step='0.01' name='volume' min='0' max='1' value={volume} onChange={(e)=> setVolume(e.target.value)} /> <br/>
+       <h4 id='display'>{record}</h4>
       </div> 
     </div>
   );
